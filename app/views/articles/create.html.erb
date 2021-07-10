@@ -1,0 +1,9 @@
+<h1>What article do you want to add</h1>
+
+<%= form_for (@article) do |form| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit "Add article" %>
+<% end %>
